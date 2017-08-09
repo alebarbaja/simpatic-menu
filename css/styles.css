@@ -1,0 +1,138 @@
+/* VARIABLES */
+/* CSS! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #4f4f67;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+
+.container {
+  border: 1px solid transparent;
+  width: 60%;
+  background-color: lightgray;
+  margin: auto;
+  border-radius: 0.4em;
+}
+.container a {
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all .1s ease-in-out;
+}
+.container a:visited {
+  color: #494949;
+}
+.container a:hover {
+  border-bottom: 2px solid;
+}
+
+.item {
+  border-radius: 0.4em;
+  padding: 1em;
+  background-color: white;
+  margin: 0.5em;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all .1s ease-in-out;
+  overflow: hidden;
+}
+
+#container-mini-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mini-item {
+  border-radius: 0.4em;
+  padding: 1em;
+  background-color: #fff;
+  margin: 0.2em auto;
+  width: 80%;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all .1s ease-in-out;
+}
+
+.mini-item:hover,
+.item:hover {
+  background-color: #f9f9f9;
+  color: black;
+  font-weight: 700;
+  border-bottom: 2px solid;
+}
+
+.lng:hover {
+  border-bottom: 2px solid;
+}
+
+footer {
+  font-size: 0.7em;
+  font-weight: bold;
+  text-transform: lowercase;
+  padding: 0.5em;
+  color: #4f4f67;
+  cursor: pointer;
+}
+footer .fa-heart {
+  font-size: 1.5em;
+  transition: all .2s ease-in-out;
+}
+footer .fa-heart:hover {
+  color: #ee6a6a;
+  animation: pulse 1s infinite;
+}
+footer .alebarbaja {
+  font-size: 1.3em;
+  color: #525252;
+  border-top: 2px solid transparent;
+  transition: all .2s ease-in-out;
+}
+footer .alebarbaja:hover {
+  font-weight: 900;
+  border-top: 2px solid;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 500px) {
+  .mini-item {
+    width: 60%;
+  }
+
+  .item,
+  .mini-item {
+    text-align: center;
+  }
+
+  footer {
+    font-weight: medium;
+  }
+}
+/* KEYFRAMES */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
