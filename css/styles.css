@@ -47,7 +47,7 @@ body {
   overflow: hidden;
 }
 
-#container-mini-item {
+.container-mini-item {
   display: flex;
   flex-direction: column;
   width: 100%;
